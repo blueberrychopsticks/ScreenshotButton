@@ -52,6 +52,10 @@ folder - /Users/laptop/Desktop/page 07 a1 12:54 start
         // DAFUQ rhymes with that word -- Marshall McKlewin?
         // BONUS spell that name right within seconds of hearing it.
         // Or else suffer your losses, because I'm done rhyming. Games up!
+        
+        // Thursday, March 10, 2022, 0216 AM
+        // - War in Ukraine. Apparently unprovoked being attacked by global "super" power. 40 miles of tanks freezing in the Tundra says otherwise. But prayers are with soldiers on the Ukranian front that they are able to safely (survive doesn't seem respectable enough a word anymore :( ) <<|~~< the dart hitting the frog indicates great sadness. sorry I sound like an idiot to you, I'm just trying to learn what it is that entertains a person like you or us anymore? with money? idk... it's all I've got right now. Cheeres all. 
+        // https://enoemos.notion.site/Page-7-Users-laptop-Desktop-page-07-a1-12-54-start-d5cea601cad64c38a604c58a10e89e29
         TextField("Otter", text: $otter)
         TextField("File Path", text: $path)
         TextField("File Prefix", text: $prefix)
