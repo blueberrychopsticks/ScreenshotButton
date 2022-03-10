@@ -11,6 +11,7 @@
 		4040212D27D6AFFC00220A39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040212C27D6AFFC00220A39 /* ContentView.swift */; };
 		4040212F27D6AFFD00220A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4040212E27D6AFFD00220A39 /* Assets.xcassets */; };
 		4040213227D6AFFD00220A39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4040213127D6AFFD00220A39 /* Preview Assets.xcassets */; };
+		4040213A27D6C14C00220A39 /* TakeScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040213927D6C14C00220A39 /* TakeScreenshot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		4040212E27D6AFFD00220A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4040213127D6AFFD00220A39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4040213327D6AFFD00220A39 /* ScreenshotButton.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenshotButton.entitlements; sourceTree = "<group>"; };
+		4040213927D6C14C00220A39 /* TakeScreenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenshot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				4040212E27D6AFFD00220A39 /* Assets.xcassets */,
 				4040213327D6AFFD00220A39 /* ScreenshotButton.entitlements */,
 				4040213027D6AFFD00220A39 /* Preview Content */,
+				4040213927D6C14C00220A39 /* TakeScreenshot.swift */,
 			);
 			path = ScreenshotButton;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4040213A27D6C14C00220A39 /* TakeScreenshot.swift in Sources */,
 				4040212D27D6AFFC00220A39 /* ContentView.swift in Sources */,
 				4040212B27D6AFFC00220A39 /* ScreenshotButtonApp.swift in Sources */,
 			);
@@ -268,10 +272,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ScreenshotButton/ScreenshotButton.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreenshotButton/Preview Content\"";
+				DEVELOPMENT_TEAM = 4EC72DECN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -282,6 +287,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blueberrychopsticks.ScreenshotButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -293,10 +299,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ScreenshotButton/ScreenshotButton.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreenshotButton/Preview Content\"";
+				DEVELOPMENT_TEAM = 4EC72DECN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -307,6 +314,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blueberrychopsticks.ScreenshotButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

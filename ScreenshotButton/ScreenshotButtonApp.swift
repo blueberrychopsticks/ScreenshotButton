@@ -6,12 +6,50 @@
 //
 
 import SwiftUI
-
+import Foundation
 @main
 struct ScreenshotButtonApp: App {
+  @AppStorage("tapCount") private var tapCount = 0
+  @AppStorage("otter") private var otter = "If you're recording an Otter, paste it here. Eventually, I hope this can automatically detect if you're recording one of any publicly available voice to text transcriptions. And I hope the price of them goes down."
+  @AppStorage("path") private var path = "/Users/laptop/Desktop/"
+  @AppStorage("prefix") private var prefix = ""
+  
+  
+  @State var hidden = false
     var body: some Scene {
+      let size = hidden ? 1.0 : 850.0
         WindowGroup {
-            ContentView()
+          
+          
+          ContentView(otter: $otter, path: $path, prefix: $prefix, hidden: $hidden).frame(width: size, height: size).onAppear {
+          
+//          ContentView(context: ContextProviders(,  path,  prefix), hidden: $hidden).frame(width: size, height: size).onAppear {
+          }
         }
     }
 }
+
+  // change this to TCA and consume state rather than state providers
+//struct ContextProviders {
+//   var otter: Binding<String>;
+//   var path: Binding<String>;
+//   var prefix: Binding<String>;
+//
+//  init(_ otter: String, _ path: String, _ prefix: String) {
+//    self.otter = Binding(
+//      get: {self.otter},
+//      set: {self.otter = $0}
+//    )
+//    self.path = Binding(
+//      get: {self.path},
+//      set: {self.path = $0}
+//    )
+//
+//    self.prefix = Binding(Binding<V>
+//      get: {self.prefix},
+//      set: {self.prefix = $0}
+//    )
+//
+//
+//  }
+//}
