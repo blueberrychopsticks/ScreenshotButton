@@ -17,7 +17,14 @@ struct ContentView: View {
     var body: some View {
       VStack {
         /* TODO
+         
+         fix not disappearing bug (git bisect anyone? match it up with the photos and you've got the timestamp it broke! commit more often (comitting more often)
 
+	keyboard shortcut and toolbar item mandatory for helpful use
+
+	some kind of indication of crash - audibly preferred - visuall on entire screen if muted
+
+         have button follow close to a clickable area of the mouse drag after drag ends and debounces for a few milliseconds - not too slow to slow down user - not too fast to make it glitch. <sweet spot>
 
         git commit
         show error
