@@ -16,6 +16,35 @@ struct ContentView: View {
 
     var body: some View {
       VStack {
+        /* TODO
+
+
+        git commit
+        show error
+        follow focus / show on all desktops
+        copy all text to markdown'ed links or json or variable names (or maybe even a resume
+                 ---- generator? talk to chris - that's one smart cookie)
+folder - /Users/laptop/Desktop/page 07 a1 12:54 start
+        now = @March 10, 2022 1:23
+         END TODO */
+
+        // don't you see? these will be used at timestamped proof of work on
+        // the blockchain
+        // we just need a very neutral oracle; kind of like a loving wife.
+        // most oracles, historically speaking, tear a man's ego to shreds.
+        // Living with a great wife as a neutral oracle is likely to grant
+        // him quite soft beds. Beautiful decor, hard tough love. The exact
+        // thing you need, and you need quite a love. When you dance on that
+        // machine, you require your hand, gloved.
+        // Tempo was off and I'm rather upset.
+        // Commenting in xCode, what a faGGET.
+        // Sorry for language we should get over it.
+        // Real problems near Russia that's all that I'll write.
+        // If we all work together we'll all be all right.
+        // Torn apart how we are? We're destined for ruin.
+        // DAFUQ rhymes with that word -- Marshall McKlewin?
+        // BONUS spell that name right within seconds of hearing it.
+        // Or else suffer your losses, because I'm done rhyming. Games up!
         TextField("Otter", text: $otter)
         TextField("File Path", text: $path)
         TextField("File Prefix", text: $prefix)
@@ -28,12 +57,14 @@ struct ContentView: View {
           DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             hidden = false
           }
-          
+
         }
+      Spacer()
       }.padding().onAppear {
         print(NSApplication.shared.windows)
 
       }.font(.largeTitle)
+
     }
 }
 

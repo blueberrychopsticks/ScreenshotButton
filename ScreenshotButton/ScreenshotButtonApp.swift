@@ -21,8 +21,8 @@ struct ScreenshotButtonApp: App {
         WindowGroup {
           
           
-          ContentView(otter: $otter, path: $path, prefix: $prefix, hidden: $hidden).frame(width: size, height: size).onAppear {
-          
+          ContentView(otter: $otter, path: $path, prefix: $prefix, hidden: $hidden).frame(minWidth: size, idealHeight: size / 2.181828).onAppear {
+//          Math.PI
 //          ContentView(context: ContextProviders(,  path,  prefix), hidden: $hidden).frame(width: size, height: size).onAppear {
           }
         }
