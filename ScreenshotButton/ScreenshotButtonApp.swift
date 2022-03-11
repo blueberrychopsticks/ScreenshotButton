@@ -5,29 +5,31 @@
 //  Created by laptop on 3/7/22.
 //
 
-import SwiftUI
 import Foundation
+import SwiftUI
+
 @main
 struct ScreenshotButtonApp: App {
   @AppStorage("tapCount") private var tapCount = 0
-  @AppStorage("otter") private var otter = "If you're recording an Otter, paste it here. Eventually, I hope this can automatically detect if you're recording one of any publicly available voice to text transcriptions. And I hope the price of them goes down."
+  @AppStorage("otter") private var otter =
+    "If you're recording an Otter, paste it here. Eventually, I hope this can automatically detect if you're recording one of any publicly available voice to text transcriptions. And I hope the price of them goes down."
   @AppStorage("path") private var path = "/Users/laptop/Desktop/"
   @AppStorage("prefix") private var prefix = ""
-  
-  
+
   @State var hidden = false
-    var body: some Scene {
-      let defaultSize = 850.0
-      let hiddenSize = 1.0
-      let size = hidden ? hiddenSize : defaultSize
-        WindowGroup {
-          
-          ContentView(otter: $otter, path: $path, prefix: $prefix, hidden: $hidden).frame(minWidth: size, maxWidth: size, idealHeight: size)
-        }
+  var body: some Scene {
+    let defaultSize = 850.0
+    let hiddenSize = 1.0
+    let size = hidden ? hiddenSize : defaultSize
+    WindowGroup {
+      ContentView(otter: $otter, path: $path, prefix: $prefix, hidden: $hidden)
+        .frame(
+          minWidth: size, maxWidth: size, idealHeight: size)
     }
+  }
 }
 
-  // change this to TCA and consume state rather than state providers
+// change this to TCA and consume state rather than state providers
 //struct ContextProviders {
 //   var otter: Binding<String>;
 //   var path: Binding<String>;
