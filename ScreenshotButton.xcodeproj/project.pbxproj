@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401D8AB927DBB6460017D2C9 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 401D8AB827DBB6460017D2C9 /* Algorithms */; };
 		4040212B27D6AFFC00220A39 /* ScreenshotButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040212A27D6AFFC00220A39 /* ScreenshotButtonApp.swift */; };
 		4040212D27D6AFFC00220A39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040212C27D6AFFC00220A39 /* ContentView.swift */; };
 		4040212F27D6AFFD00220A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4040212E27D6AFFD00220A39 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401D8AB927DBB6460017D2C9 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = ScreenshotButton;
+			packageProductDependencies = (
+				401D8AB827DBB6460017D2C9 /* Algorithms */,
+			);
 			productName = ScreenshotButton;
 			productReference = 4040212727D6AFFC00220A39 /* ScreenshotButton.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 4040211E27D6AFFC00220A39;
+			packageReferences = (
+				401D8AB727DBB6460017D2C9 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 4040212827D6AFFC00220A39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -346,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		401D8AB727DBB6460017D2C9 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		401D8AB827DBB6460017D2C9 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 401D8AB727DBB6460017D2C9 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4040211F27D6AFFC00220A39 /* Project object */;
 }
