@@ -71,10 +71,9 @@ folder - /Users/laptop/Desktop/page 07 a1 12:54 start
 
         }
       Spacer()
-      }.padding().onAppear {
-        print(NSApplication.shared.windows)
-
-      }.font(.largeTitle)
+      }
+      .padding()
+      .font(.largeTitle)
 
     }
 }

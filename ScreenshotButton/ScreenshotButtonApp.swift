@@ -17,14 +17,12 @@ struct ScreenshotButtonApp: App {
   
   @State var hidden = false
     var body: some Scene {
-      let size = hidden ? 1.0 : 850.0
+      let defaultSize = 850.0
+      let hiddenSize = 1.0
+      let size = hidden ? hiddenSize : defaultSize
         WindowGroup {
           
-          
-          ContentView(otter: $otter, path: $path, prefix: $prefix, hidden: $hidden).frame(minWidth: size, idealHeight: size / 2.181828).onAppear {
-//          Math.PI
-//          ContentView(context: ContextProviders(,  path,  prefix), hidden: $hidden).frame(width: size, height: size).onAppear {
-          }
+          ContentView(otter: $otter, path: $path, prefix: $prefix, hidden: $hidden).frame(minWidth: size, maxWidth: size, idealHeight: size)
         }
     }
 }
