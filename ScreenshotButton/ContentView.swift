@@ -18,21 +18,24 @@ struct ContentView: View {
     VStack {
       /* TODO
 
-         fix not disappearing bug (git bisect anyone? match it up with the photos and you've got the timestamp it broke! commit more often (comitting more often)
-
 	keyboard shortcut and toolbar item mandatory for helpful use
 
 	some kind of indication of crash - audibly preferred - visuall on entire screen if muted
 
          have button follow close to a clickable area of the mouse drag after drag ends and debounces for a few milliseconds - not too slow to slow down user - not too fast to make it glitch. <sweet spot>
 
-        git commit
+        git commit -- automatically link github based on git commit
+
         show error
+
         follow focus / show on all desktops
-        copy all text to markdown'ed links or json or variable names (or maybe even a resume
+
+        copy (export) all text to markdown'ed links or json or variable names (or maybe even a resume
                  ---- generator? talk to chris - that's one smart cookie)
+
 folder - /Users/laptop/Desktop/page 07 a1 12:54 start
         now = @March 10, 2022 1:23
+
          END TODO */
 
       // don't you see? these will be used at timestamped proof of work on
@@ -49,8 +52,8 @@ folder - /Users/laptop/Desktop/page 07 a1 12:54 start
       // Real problems near Russia that's all that I'll write.
       // If we all work together we'll all be all right.
       // Torn apart how we are? We're destined for ruin.
-      // DAFUQ rhymes with that word -- Marshall McKlewin?
-      // BONUS spell that name right within seconds of hearing it.
+      // DAFUQ rhymes with that word -- Marshall McKlewin? ---         Herbert Marshall McLuhan CC was a Canadian philosopher whose work is among the cornerstones of the study of media theory. Born in Edmonton, Alberta, and raised in Winnipeg, Manitoba, McLuhan studied at the University of Manitoba and the University of Cambridge. Wikipedia
+      // BONUS spell that name right within seconds of hearing it. --- Marshall McLuhan
       // Or else suffer your losses, because I'm done rhyming. Games up!
 
       // Thursday, March 10, 2022, 0216 AM
