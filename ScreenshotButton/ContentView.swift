@@ -19,8 +19,11 @@ struct ContentView: View {
       TextField("Otter", text: $otter)
       TextField("File Path", text: $path)
       TextField("File Prefix", text: $prefix)
+
       Button("Screenshot") {
+        // send(.hideAppForSeconds(.1))
         hidden = true
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
           TakeScreensShots(folderName: path, filePrefix: prefix)
         }
@@ -30,7 +33,9 @@ struct ContentView: View {
         }
 
       }
+
       Spacer()
+
     }
     .padding()
     .font(.largeTitle)
