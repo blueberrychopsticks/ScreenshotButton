@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-  //  var context: ContextProviders <~~ Tried it, need to convert to TCA rather than reinvent wheel
   @Binding var otter: String
   @Binding var path: String
   @Binding var prefix: String
@@ -38,4 +37,3 @@ struct ContentView: View {
 
   }
 }
-
