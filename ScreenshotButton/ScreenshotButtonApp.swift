@@ -17,6 +17,7 @@ struct AppState: Equatable {
 }
 
 enum AppAction: Equatable {
+  // TODO -> can I move these to a single struct that's mutable with viewStore#binding?
   case otterTextChanged(String)
   case pathTextChanged(String)
   case prefixTextChanged(String)
