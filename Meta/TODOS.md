@@ -1,10 +1,6 @@
-keyboard shortcut and toolbar item mandatory for helpful use
-
 change this to TCA and consume state rather than state providers
 
-have button follow close to a clickable area of the mouse drag after drag ends and debounces for a few milliseconds - not too slow to slow down user - not too fast to make it glitch. <sweet spot>
-
-git commit -- automatically link github based on git commit
+git commit hash -- automatically link github based on git commit
 
 show error
 
@@ -21,8 +17,6 @@ Automatically prepend file name for easy organization and context in application
 Take care of appending / to filepath if it isn't there
 
 Better layout
-
-Single keyboard hotkey from anywhere (even if app is backgrounded)
 
 TCA practice?
 
