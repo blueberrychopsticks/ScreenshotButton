@@ -18,9 +18,5 @@ Take care of appending / to filepath if it isn't there
 
 Better layout
 
-TCA practice?
-
-
-
 folder - /Users/laptop/Desktop/page 07 a1 12:54 start
-now = @March 10, 2022 1:2*/
+now = @March 10, 2022
