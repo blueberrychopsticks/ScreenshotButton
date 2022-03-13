@@ -12,7 +12,8 @@
 		401B762C27DD68D8008D3500 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401B762B27DD68D8008D3500 /* Preview Assets.xcassets */; };
 		401B763427DD6976008D3500 /* TakeScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B763327DD6976008D3500 /* TakeScreenshot.swift */; };
 		401B763627DD6A6A008D3500 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B763527DD6A6A008D3500 /* ContentView.swift */; };
-		401D8AB927DBB6460017D2C9 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 401D8AB827DBB6460017D2C9 /* Algorithms */; };
+		401B763827DD6CBB008D3500 /* ColorMultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B763727DD6CBB008D3500 /* ColorMultipeerSession.swift */; };
+		401B763927DD6CBB008D3500 /* ColorMultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B763727DD6CBB008D3500 /* ColorMultipeerSession.swift */; };
 		4040212B27D6AFFC00220A39 /* ScreenshotButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040212A27D6AFFC00220A39 /* ScreenshotButtonApp.swift */; };
 		4040212D27D6AFFC00220A39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040212C27D6AFFC00220A39 /* ContentView.swift */; };
 		4040212F27D6AFFD00220A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4040212E27D6AFFD00220A39 /* Assets.xcassets */; };
@@ -28,6 +29,9 @@
 		401B762B27DD68D8008D3500 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		401B763327DD6976008D3500 /* TakeScreenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenshot.swift; sourceTree = "<group>"; };
 		401B763527DD6A6A008D3500 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		401B763727DD6CBB008D3500 /* ColorMultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMultipeerSession.swift; sourceTree = "<group>"; };
+		401B763A27DD76CB008D3500 /* DesktopScreenshotButton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DesktopScreenshotButton-Info.plist"; sourceTree = "<group>"; };
+		401B763B27DD7719008D3500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4040212727D6AFFC00220A39 /* DesktopScreenshotButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopScreenshotButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4040212A27D6AFFC00220A39 /* ScreenshotButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotButtonApp.swift; sourceTree = "<group>"; };
 		4040212C27D6AFFC00220A39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				401D8AB927DBB6460017D2C9 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		401B762327DD68D7008D3500 /* MobileScreenshotButton */ = {
 			isa = PBXGroup;
 			children = (
+				401B763B27DD7719008D3500 /* Info.plist */,
 				401B762427DD68D7008D3500 /* MobileScreenshotButtonApp.swift */,
 				401B763527DD6A6A008D3500 /* ContentView.swift */,
 				401B763327DD6976008D3500 /* TakeScreenshot.swift */,
@@ -81,6 +85,7 @@
 		4040211E27D6AFFC00220A39 = {
 			isa = PBXGroup;
 			children = (
+				401B763A27DD76CB008D3500 /* DesktopScreenshotButton-Info.plist */,
 				4040212927D6AFFC00220A39 /* ScreenshotButton */,
 				401B762327DD68D7008D3500 /* MobileScreenshotButton */,
 				4040212827D6AFFC00220A39 /* Products */,
@@ -106,6 +111,7 @@
 				4040212E27D6AFFD00220A39 /* Assets.xcassets */,
 				4040213327D6AFFD00220A39 /* ScreenshotButton.entitlements */,
 				4040213027D6AFFD00220A39 /* Preview Content */,
+				401B763727DD6CBB008D3500 /* ColorMultipeerSession.swift */,
 			);
 			path = ScreenshotButton;
 			sourceTree = "<group>";
@@ -161,7 +167,6 @@
 			);
 			name = DesktopScreenshotButton;
 			packageProductDependencies = (
-				401D8AB827DBB6460017D2C9 /* Algorithms */,
 			);
 			productName = ScreenshotButton;
 			productReference = 4040212727D6AFFC00220A39 /* DesktopScreenshotButton.app */;
@@ -195,7 +200,6 @@
 			);
 			mainGroup = 4040211E27D6AFFC00220A39;
 			packageReferences = (
-				401D8AB727DBB6460017D2C9 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = 4040212827D6AFFC00220A39 /* Products */;
 			projectDirPath = "";
@@ -233,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401B763927DD6CBB008D3500 /* ColorMultipeerSession.swift in Sources */,
 				401B762527DD68D7008D3500 /* MobileScreenshotButtonApp.swift in Sources */,
 				401B763627DD6A6A008D3500 /* ContentView.swift in Sources */,
 				401B763427DD6976008D3500 /* TakeScreenshot.swift in Sources */,
@@ -246,6 +251,7 @@
 				4040213A27D6C14C00220A39 /* TakeScreenshot.swift in Sources */,
 				4040212D27D6AFFC00220A39 /* ContentView.swift in Sources */,
 				4040212B27D6AFFC00220A39 /* ScreenshotButtonApp.swift in Sources */,
+				401B763827DD6CBB008D3500 /* ColorMultipeerSession.swift in Sources */,
 				BDD6F9FBF5B50DDC6D186130 /* TODOS.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +270,8 @@
 				DEVELOPMENT_TEAM = KW8RLKUW3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobileScreenshotButton/Info.plist;
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "We gotta take screenshots ya know";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,6 +303,8 @@
 				DEVELOPMENT_TEAM = KW8RLKUW3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobileScreenshotButton/Info.plist;
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "We gotta take screenshots ya know";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -444,7 +454,9 @@
 				DEVELOPMENT_TEAM = 4EC72DECN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DesktopScreenshotButton-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "We gotta take screenshots ya know";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -471,7 +483,9 @@
 				DEVELOPMENT_TEAM = 4EC72DECN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DesktopScreenshotButton-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "We gotta take screenshots ya know";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -516,25 +530,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		401D8AB727DBB6460017D2C9 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-algorithms.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		401D8AB827DBB6460017D2C9 /* Algorithms */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 401D8AB727DBB6460017D2C9 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
-			productName = Algorithms;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4040211F27D6AFFC00220A39 /* Project object */;
 }

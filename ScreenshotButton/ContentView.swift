@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+  @StateObject var colorSession = ColorMultipeerSession()
+
   @Binding var otter: String
   @Binding var path: String
   @Binding var prefix: String
@@ -15,6 +17,9 @@ struct ContentView: View {
 
   var body: some View {
     VStack {
+      Text("Connected Devices:").bold()
+
+      Text(String(describing: colorSession.connectedPeers.map(\.displayName)))
 
       TextField("Otter", text: $otter)
       TextField("File Path", text: $path)

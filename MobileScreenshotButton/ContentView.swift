@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+  @StateObject var colorSession = ColorMultipeerSession()
 
   var body: some View {
     VStack {
+      Text("Connected Devices:").bold()
+
+      Text(String(describing: colorSession.connectedPeers.map(\.displayName)))
 
       Button("Trigger Desktop Screenshot") {
-        //todo
-      }
+        colorSession.send(color: .green)
+      }.disabled(colorSession.connectedPeers.isEmpty)
 
       Spacer()
 
