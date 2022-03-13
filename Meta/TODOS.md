@@ -1,5 +1,3 @@
-screenshot triggered from phone
-
 keyboard shortcut and toolbar item mandatory for helpful use
 
 change this to TCA and consume state rather than state providers
