@@ -19,6 +19,8 @@
 		4040212F27D6AFFD00220A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4040212E27D6AFFD00220A39 /* Assets.xcassets */; };
 		4040213227D6AFFD00220A39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4040213127D6AFFD00220A39 /* Preview Assets.xcassets */; };
 		4040213A27D6C14C00220A39 /* TakeScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040213927D6C14C00220A39 /* TakeScreenshot.swift */; };
+		40B6C33327DD8AFD0052D9CE /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 40B6C33227DD8AFD0052D9CE /* ComposableArchitecture */; };
+		40B6C33527DD8B070052D9CE /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 40B6C33427DD8B070052D9CE /* ComposableArchitecture */; };
 		BDD6F9FBF5B50DDC6D186130 /* TODOS.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD6FA76C643E72F569A95A3 /* TODOS.md */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,7 @@
 		4040213127D6AFFD00220A39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4040213327D6AFFD00220A39 /* ScreenshotButton.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenshotButton.entitlements; sourceTree = "<group>"; };
 		4040213927D6C14C00220A39 /* TakeScreenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenshot.swift; sourceTree = "<group>"; };
+		40B6C33027DD8ADC0052D9CE /* swift-composable-architecture */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-composable-architecture"; path = "../../../Learning/swift/swift-composable-architecture"; sourceTree = "<group>"; };
 		BDD6FA76C643E72F569A95A3 /* TODOS.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TODOS.md; sourceTree = "<group>"; };
 		BDD6FCC0CE28DA55D3ECA710 /* Page 7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Page 7.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B6C33527DD8B070052D9CE /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B6C33327DD8AFD0052D9CE /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,11 +90,13 @@
 		4040211E27D6AFFC00220A39 = {
 			isa = PBXGroup;
 			children = (
+				40B6C32F27DD8ADC0052D9CE /* Packages */,
 				401B763A27DD76CB008D3500 /* DesktopScreenshotButton-Info.plist */,
 				4040212927D6AFFC00220A39 /* ScreenshotButton */,
 				401B762327DD68D7008D3500 /* MobileScreenshotButton */,
 				4040212827D6AFFC00220A39 /* Products */,
 				BDD6FFCFD9B986C898A1F700 /* Meta */,
+				40B6C33127DD8AFD0052D9CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +131,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		40B6C32F27DD8ADC0052D9CE /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				40B6C33027DD8ADC0052D9CE /* swift-composable-architecture */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		40B6C33127DD8AFD0052D9CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BDD6FFCFD9B986C898A1F700 /* Meta */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +171,9 @@
 			dependencies = (
 			);
 			name = MobileScreenshotButton;
+			packageProductDependencies = (
+				40B6C33427DD8B070052D9CE /* ComposableArchitecture */,
+			);
 			productName = MobileScreenshotButton;
 			productReference = 401B762227DD68D7008D3500 /* MobileScreenshotButton.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +192,7 @@
 			);
 			name = DesktopScreenshotButton;
 			packageProductDependencies = (
+				40B6C33227DD8AFD0052D9CE /* ComposableArchitecture */,
 			);
 			productName = ScreenshotButton;
 			productReference = 4040212727D6AFFC00220A39 /* DesktopScreenshotButton.app */;
@@ -530,6 +556,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40B6C33227DD8AFD0052D9CE /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ComposableArchitecture;
+		};
+		40B6C33427DD8B070052D9CE /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4040211F27D6AFFC00220A39 /* Project object */;
 }
