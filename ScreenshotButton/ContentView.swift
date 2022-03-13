@@ -5,45 +5,68 @@
 //  Created by laptop on 3/7/22.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 struct ContentView: View {
+  let store: Store<AppState, AppAction>
+  let toggleAppVisibility: (Bool) -> Void
+
   @StateObject var colorSession = ColorMultipeerSession()
 
-  @Binding var otter: String
-  @Binding var path: String
-  @Binding var prefix: String
-  @Binding var hidden: Bool
-
   var body: some View {
-    VStack {
-      Text("Connected Devices:").bold()
 
-      Text(String(describing: colorSession.connectedPeers.map(\.displayName)))
+    WithViewStore(store) { viewStore in
 
-      TextField("Otter", text: $otter)
-      TextField("File Path", text: $path)
-      TextField("File Prefix", text: $prefix)
+      VStack {
+        Text("Connected Devices:").bold()
 
-      Button("Screenshot") {
-        // send(.hideAppForSeconds(.1))
-        hidden = true
+        Text(String(describing: colorSession.connectedPeers.map(\.displayName)))
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-          TakeScreensShots(folderName: path, filePrefix: prefix)
+        TextField(
+          "Otter",
+          text: viewStore.binding(
+            get: \.otter,
+            send: AppAction.otterTextChanged
+          )
+        )
+
+        TextField(
+          "File Path",
+          text: viewStore.binding(
+            get: \.path,
+            send: AppAction.pathTextChanged
+          )
+        )
+
+        TextField(
+          "File Prefix",
+          text: viewStore.binding(
+            get: \.prefix,
+            send: AppAction.prefixTextChanged
+          )
+        )
+
+        Button("Screenshot") {
+          // send(.hideAppForSeconds(.1))
+          toggleAppVisibility(false)
+
+          DispatchQueue.main.asyncAfter(deadline: .now()) {
+            //            TakeScreensShots(folderName: path, filePrefix: prefix)
+          }
+
+          DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            toggleAppVisibility(true)
+          }
+
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-          hidden = false
-        }
+        Spacer()
 
-      }.disabled(true)
-
-      Spacer()
+      }
+      .padding()
+      .font(.largeTitle)
 
     }
-    .padding()
-    .font(.largeTitle)
-
   }
 }
