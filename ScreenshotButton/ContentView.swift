@@ -32,7 +32,7 @@ struct ContentView: View {
           hidden = false
         }
 
-      }
+      }.disabled(true)
 
       Spacer()
 

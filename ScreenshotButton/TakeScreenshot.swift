@@ -34,7 +34,7 @@ func TakeScreensShots(folderName: String, filePrefix: String = ""){
     }
 }
 
-func CreateTimeStamp() -> Int32
+private func CreateTimeStamp() -> Int32
 {
     return Int32(Date().timeIntervalSince1970)
 }

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401B762527DD68D7008D3500 /* MobileScreenshotButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B762427DD68D7008D3500 /* MobileScreenshotButtonApp.swift */; };
+		401B762927DD68D8008D3500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401B762827DD68D8008D3500 /* Assets.xcassets */; };
+		401B762C27DD68D8008D3500 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401B762B27DD68D8008D3500 /* Preview Assets.xcassets */; };
+		401B763427DD6976008D3500 /* TakeScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B763327DD6976008D3500 /* TakeScreenshot.swift */; };
+		401B763627DD6A6A008D3500 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B763527DD6A6A008D3500 /* ContentView.swift */; };
 		401D8AB927DBB6460017D2C9 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 401D8AB827DBB6460017D2C9 /* Algorithms */; };
 		4040212B27D6AFFC00220A39 /* ScreenshotButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040212A27D6AFFC00220A39 /* ScreenshotButtonApp.swift */; };
 		4040212D27D6AFFC00220A39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040212C27D6AFFC00220A39 /* ContentView.swift */; };
@@ -17,7 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4040212727D6AFFC00220A39 /* ScreenshotButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenshotButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		401B762227DD68D7008D3500 /* MobileScreenshotButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileScreenshotButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		401B762427DD68D7008D3500 /* MobileScreenshotButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileScreenshotButtonApp.swift; sourceTree = "<group>"; };
+		401B762827DD68D8008D3500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		401B762B27DD68D8008D3500 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		401B763327DD6976008D3500 /* TakeScreenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenshot.swift; sourceTree = "<group>"; };
+		401B763527DD6A6A008D3500 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4040212727D6AFFC00220A39 /* DesktopScreenshotButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopScreenshotButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4040212A27D6AFFC00220A39 /* ScreenshotButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotButtonApp.swift; sourceTree = "<group>"; };
 		4040212C27D6AFFC00220A39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4040212E27D6AFFD00220A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,6 +40,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		401B761F27DD68D7008D3500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4040212427D6AFFC00220A39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,10 +58,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		401B762327DD68D7008D3500 /* MobileScreenshotButton */ = {
+			isa = PBXGroup;
+			children = (
+				401B762427DD68D7008D3500 /* MobileScreenshotButtonApp.swift */,
+				401B763527DD6A6A008D3500 /* ContentView.swift */,
+				401B763327DD6976008D3500 /* TakeScreenshot.swift */,
+				401B762827DD68D8008D3500 /* Assets.xcassets */,
+				401B762A27DD68D8008D3500 /* Preview Content */,
+			);
+			path = MobileScreenshotButton;
+			sourceTree = "<group>";
+		};
+		401B762A27DD68D8008D3500 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				401B762B27DD68D8008D3500 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		4040211E27D6AFFC00220A39 = {
 			isa = PBXGroup;
 			children = (
 				4040212927D6AFFC00220A39 /* ScreenshotButton */,
+				401B762327DD68D7008D3500 /* MobileScreenshotButton */,
 				4040212827D6AFFC00220A39 /* Products */,
 				BDD6FFCFD9B986C898A1F700 /* Meta */,
 			);
@@ -52,7 +91,8 @@
 		4040212827D6AFFC00220A39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4040212727D6AFFC00220A39 /* ScreenshotButton.app */,
+				4040212727D6AFFC00220A39 /* DesktopScreenshotButton.app */,
+				401B762227DD68D7008D3500 /* MobileScreenshotButton.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,10 +102,10 @@
 			children = (
 				4040212A27D6AFFC00220A39 /* ScreenshotButtonApp.swift */,
 				4040212C27D6AFFC00220A39 /* ContentView.swift */,
+				4040213927D6C14C00220A39 /* TakeScreenshot.swift */,
 				4040212E27D6AFFD00220A39 /* Assets.xcassets */,
 				4040213327D6AFFD00220A39 /* ScreenshotButton.entitlements */,
 				4040213027D6AFFD00220A39 /* Preview Content */,
-				4040213927D6C14C00220A39 /* TakeScreenshot.swift */,
 			);
 			path = ScreenshotButton;
 			sourceTree = "<group>";
@@ -90,9 +130,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4040212627D6AFFC00220A39 /* ScreenshotButton */ = {
+		401B762127DD68D7008D3500 /* MobileScreenshotButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4040213627D6AFFD00220A39 /* Build configuration list for PBXNativeTarget "ScreenshotButton" */;
+			buildConfigurationList = 401B762D27DD68D8008D3500 /* Build configuration list for PBXNativeTarget "MobileScreenshotButton" */;
+			buildPhases = (
+				401B761E27DD68D7008D3500 /* Sources */,
+				401B761F27DD68D7008D3500 /* Frameworks */,
+				401B762027DD68D7008D3500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileScreenshotButton;
+			productName = MobileScreenshotButton;
+			productReference = 401B762227DD68D7008D3500 /* MobileScreenshotButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4040212627D6AFFC00220A39 /* DesktopScreenshotButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4040213627D6AFFD00220A39 /* Build configuration list for PBXNativeTarget "DesktopScreenshotButton" */;
 			buildPhases = (
 				4040212327D6AFFC00220A39 /* Sources */,
 				4040212427D6AFFC00220A39 /* Frameworks */,
@@ -102,12 +159,12 @@
 			);
 			dependencies = (
 			);
-			name = ScreenshotButton;
+			name = DesktopScreenshotButton;
 			packageProductDependencies = (
 				401D8AB827DBB6460017D2C9 /* Algorithms */,
 			);
 			productName = ScreenshotButton;
-			productReference = 4040212727D6AFFC00220A39 /* ScreenshotButton.app */;
+			productReference = 4040212727D6AFFC00220A39 /* DesktopScreenshotButton.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -120,6 +177,9 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					401B762127DD68D7008D3500 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					4040212627D6AFFC00220A39 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -135,18 +195,28 @@
 			);
 			mainGroup = 4040211E27D6AFFC00220A39;
 			packageReferences = (
-				401D8AB727DBB6460017D2C9 /* XCRemoteSwiftPackageReference "swift-algorithms.git" */,
+				401D8AB727DBB6460017D2C9 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = 4040212827D6AFFC00220A39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4040212627D6AFFC00220A39 /* ScreenshotButton */,
+				4040212627D6AFFC00220A39 /* DesktopScreenshotButton */,
+				401B762127DD68D7008D3500 /* MobileScreenshotButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		401B762027DD68D7008D3500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401B762C27DD68D8008D3500 /* Preview Assets.xcassets in Resources */,
+				401B762927DD68D8008D3500 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4040212527D6AFFC00220A39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,6 +229,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		401B761E27DD68D7008D3500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401B762527DD68D7008D3500 /* MobileScreenshotButtonApp.swift in Sources */,
+				401B763627DD6A6A008D3500 /* ContentView.swift in Sources */,
+				401B763427DD6976008D3500 /* TakeScreenshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4040212327D6AFFC00220A39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +253,69 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		401B762E27DD68D8008D3500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MobileScreenshotButton/Preview Content\"";
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueberrychopsticks.MobileScreenshotButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		401B762F27DD68D8008D3500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MobileScreenshotButton/Preview Content\"";
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueberrychopsticks.MobileScreenshotButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		4040213427D6AFFD00220A39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -345,6 +488,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		401B762D27DD68D8008D3500 /* Build configuration list for PBXNativeTarget "MobileScreenshotButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				401B762E27DD68D8008D3500 /* Debug */,
+				401B762F27DD68D8008D3500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4040212227D6AFFC00220A39 /* Build configuration list for PBXProject "ScreenshotButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -354,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4040213627D6AFFD00220A39 /* Build configuration list for PBXNativeTarget "ScreenshotButton" */ = {
+		4040213627D6AFFD00220A39 /* Build configuration list for PBXNativeTarget "DesktopScreenshotButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4040213727D6AFFD00220A39 /* Debug */,
@@ -366,7 +518,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		401D8AB727DBB6460017D2C9 /* XCRemoteSwiftPackageReference "swift-algorithms.git" */ = {
+		401D8AB727DBB6460017D2C9 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
 			requirement = {
@@ -379,7 +531,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		401D8AB827DBB6460017D2C9 /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 401D8AB727DBB6460017D2C9 /* XCRemoteSwiftPackageReference "swift-algorithms.git" */;
+			package = 401D8AB727DBB6460017D2C9 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
 		};
 /* End XCSwiftPackageProductDependency section */
