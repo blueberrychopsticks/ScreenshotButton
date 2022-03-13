@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4040212627D6AFFC00220A39"
-               BuildableName = "ScreenshotButtonDesktop.app"
+               BuildableName = "DesktopScreenshotButton.app"
                BlueprintName = "DesktopScreenshotButton"
                ReferencedContainer = "container:ScreenshotButton.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4040212627D6AFFC00220A39"
-            BuildableName = "ScreenshotButtonDesktop.app"
+            BuildableName = "DesktopScreenshotButton.app"
             BlueprintName = "DesktopScreenshotButton"
             ReferencedContainer = "container:ScreenshotButton.xcodeproj">
          </BuildableReference>

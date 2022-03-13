@@ -26,6 +26,7 @@ class ColorMultipeerSession: NSObject, ObservableObject {
   override init() {
     precondition(Thread.isMainThread)
     session = MCSession(peer: myPeerId)
+    
     serviceAdvertiser = MCNearbyServiceAdvertiser(
       peer: myPeerId,
       discoveryInfo: nil,
@@ -53,7 +54,7 @@ class ColorMultipeerSession: NSObject, ObservableObject {
     #if os(iOS)
     // noop
     #else
-    TakeScreensShots(folderName: "/Users/laptop/Desktop/Watchalong/Secret Sharing Explained Visually/")
+    TakeScreensShots(folderName: "/Users/laptop/Desktop/test/")
     #endif
 
   }
