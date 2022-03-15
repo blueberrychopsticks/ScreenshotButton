@@ -1,3 +1,5 @@
+autodetect and paste from clipboard (with button)
+
 change this to TCA and consume state rather than state providers
 
 git commit hash -- automatically link github based on git commit
