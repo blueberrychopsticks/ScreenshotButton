@@ -13,12 +13,31 @@ struct AppState: Equatable {
   var path = "/Users/laptop/Desktop/"
   var prefix = ""
 }
+//
+//enum SyncrhonizationAction: Equatable {
+//  case syncStateReceived( /*TODO json or data handling*/String)
+//  case sendSyncState( /*TODO json or data handling*/String)
+//
+//  /* going to right these as human readable as an experiement (see 95 commands otter recording */
+//  case sayIdLikeToJoinYourSession/*(SyncrhonizationAction  ) *//*
+//                                                                * Session ID will be in sender's state, so don't need to specify as argument
+//                                                                */
+//  case hearThatSomeoneWouldLikeToJoinYourSession(invitingPeerId: String)
+//  case attemptToJoinSession(sessionId: String)
+//  case joinSessionSuccesfully(
+//    sessionId: String,
+//    peers: [String],
+//    /*TODO json or data handling instead of plain String*/
+//    currentState: String
+//  )
+//}
 
 enum AppAction: Equatable {
   // TODO -> can I move these to a single struct that's mutable with viewStore#binding?
   case otterTextChanged(String)
   case pathTextChanged(String)
   case prefixTextChanged(String)
+  case synchronization(SyncrhonizationAction)
 }
 
 struct AppEnvironment {}
@@ -35,5 +54,11 @@ let appReducer = Reducer<AppState, AppAction, AppEnvironment> { state, action, e
   case let .prefixTextChanged(prefix):
     state.prefix = prefix
     return .none
+    
+  case .synchronization:
+    return .none
+
+  //  case .synchronization:
+  //    return .none
   }
 }
