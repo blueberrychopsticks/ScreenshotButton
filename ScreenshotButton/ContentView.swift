@@ -52,7 +52,7 @@ struct ContentView: View {
           toggleAppVisibility(false)
 
           DispatchQueue.main.asyncAfter(deadline: .now()) {
-            //            TakeScreensShots(folderName: path, filePrefix: prefix)
+            TakeScreensShots(folderName: viewStore.path, filePrefix: viewStore.prefix)
           }
 
           DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {

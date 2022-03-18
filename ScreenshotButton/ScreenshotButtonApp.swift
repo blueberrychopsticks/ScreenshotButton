@@ -8,7 +8,6 @@
 import ComposableArchitecture
 import SwiftUI
 
-
 let DEFAULT_SIZE = 850.0
 let HIDDEN_SIZE = 0.0
 
