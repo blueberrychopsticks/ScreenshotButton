@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4017771027EE129A00285035 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4017770F27EE129A00285035 /* ComposableArchitecture */; };
+		4017771227EE12B500285035 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4017771127EE12B500285035 /* ComposableArchitecture */; };
 		401B762527DD68D7008D3500 /* MobileScreenshotButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B762427DD68D7008D3500 /* MobileScreenshotButtonApp.swift */; };
 		401B762927DD68D8008D3500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401B762827DD68D8008D3500 /* Assets.xcassets */; };
 		401B762C27DD68D8008D3500 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401B762B27DD68D8008D3500 /* Preview Assets.xcassets */; };
@@ -19,13 +21,14 @@
 		4040212F27D6AFFD00220A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4040212E27D6AFFD00220A39 /* Assets.xcassets */; };
 		4040213227D6AFFD00220A39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4040213127D6AFFD00220A39 /* Preview Assets.xcassets */; };
 		4040213A27D6C14C00220A39 /* TakeScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040213927D6C14C00220A39 /* TakeScreenshot.swift */; };
+		405D709C27EE166500C0BBFF /* SynchronizationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D709B27EE166500C0BBFF /* SynchronizationClient.swift */; };
+		405D709D27EE166500C0BBFF /* SynchronizationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D709B27EE166500C0BBFF /* SynchronizationClient.swift */; };
+		405D70A027EE292D00C0BBFF /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 405D709F27EE292D00C0BBFF /* ComposableArchitecture */; };
 		40B29F5327DDA3EF00232C3E /* ComposableStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B29F5227DDA3EF00232C3E /* ComposableStuff.swift */; };
 		40B29F5427DDA3EF00232C3E /* ComposableStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B29F5227DDA3EF00232C3E /* ComposableStuff.swift */; };
-		40B6C33327DD8AFD0052D9CE /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 40B6C33227DD8AFD0052D9CE /* ComposableArchitecture */; };
-		40B6C33527DD8B070052D9CE /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 40B6C33427DD8B070052D9CE /* ComposableArchitecture */; };
-		BDD6F6C7E75194A8BA44B3D7 /* Syncrhonization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6F89B6ECFA380D8C2341E /* Syncrhonization.swift */; };
+		BDD6F6C7E75194A8BA44B3D7 /* Synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6F89B6ECFA380D8C2341E /* Synchronization.swift */; };
 		BDD6F9FBF5B50DDC6D186130 /* TODOS.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD6FA76C643E72F569A95A3 /* TODOS.md */; };
-		BDD6FACB7E8E19BB541D2917 /* Syncrhonization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6F89B6ECFA380D8C2341E /* Syncrhonization.swift */; };
+		BDD6FACB7E8E19BB541D2917 /* Synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6F89B6ECFA380D8C2341E /* Synchronization.swift */; };
 		BDD6FC8F57CB87142A637A24 /* STRETCH.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD6FD73B8C8CA1390961813 /* STRETCH.md */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +43,6 @@
 		401B763727DD6CBB008D3500 /* ColorMultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMultipeerSession.swift; sourceTree = "<group>"; };
 		401B763A27DD76CB008D3500 /* DesktopScreenshotButton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DesktopScreenshotButton-Info.plist"; sourceTree = "<group>"; };
 		401B763B27DD7719008D3500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		403B163527E41AC400C919C9 /* swift-composable-architecture */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-composable-architecture"; path = "../../../Learning/swift/pointfree/swift-composable-architecture"; sourceTree = "<group>"; };
 		4040212727D6AFFC00220A39 /* DesktopScreenshotButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopScreenshotButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4040212A27D6AFFC00220A39 /* ScreenshotButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotButtonApp.swift; sourceTree = "<group>"; };
 		4040212C27D6AFFC00220A39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,9 +50,9 @@
 		4040213127D6AFFD00220A39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4040213327D6AFFD00220A39 /* ScreenshotButton.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenshotButton.entitlements; sourceTree = "<group>"; };
 		4040213927D6C14C00220A39 /* TakeScreenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenshot.swift; sourceTree = "<group>"; };
+		405D709B27EE166500C0BBFF /* SynchronizationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizationClient.swift; sourceTree = "<group>"; };
 		40B29F5227DDA3EF00232C3E /* ComposableStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableStuff.swift; sourceTree = "<group>"; };
-		40B6C33027DD8ADC0052D9CE /* swift-composable-architecture */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-composable-architecture"; path = "../../../Learning/swift/swift-composable-architecture"; sourceTree = "<group>"; };
-		BDD6F89B6ECFA380D8C2341E /* Syncrhonization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Syncrhonization.swift; sourceTree = "<group>"; };
+		BDD6F89B6ECFA380D8C2341E /* Synchronization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Synchronization.swift; sourceTree = "<group>"; };
 		BDD6FA76C643E72F569A95A3 /* TODOS.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TODOS.md; sourceTree = "<group>"; };
 		BDD6FCC0CE28DA55D3ECA710 /* Page 7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Page 7.txt"; sourceTree = "<group>"; };
 		BDD6FD73B8C8CA1390961813 /* STRETCH.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = STRETCH.md; sourceTree = "<group>"; };
@@ -61,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B6C33527DD8B070052D9CE /* ComposableArchitecture in Frameworks */,
+				4017771227EE12B500285035 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B6C33327DD8AFD0052D9CE /* ComposableArchitecture in Frameworks */,
+				405D70A027EE292D00C0BBFF /* ComposableArchitecture in Frameworks */,
+				4017771027EE129A00285035 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +103,6 @@
 		4040211E27D6AFFC00220A39 = {
 			isa = PBXGroup;
 			children = (
-				40B6C32F27DD8ADC0052D9CE /* Packages */,
 				401B763A27DD76CB008D3500 /* DesktopScreenshotButton-Info.plist */,
 				4040212927D6AFFC00220A39 /* ScreenshotButton */,
 				401B762327DD68D7008D3500 /* MobileScreenshotButton */,
@@ -143,15 +145,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		40B6C32F27DD8ADC0052D9CE /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				40B6C33027DD8ADC0052D9CE /* swift-composable-architecture */,
-				403B163527E41AC400C919C9 /* swift-composable-architecture */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		40B6C33127DD8AFD0052D9CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +155,8 @@
 		BDD6F3E288403476A966A602 /* Synchronization */ = {
 			isa = PBXGroup;
 			children = (
-				BDD6F89B6ECFA380D8C2341E /* Syncrhonization.swift */,
+				BDD6F89B6ECFA380D8C2341E /* Synchronization.swift */,
+				405D709B27EE166500C0BBFF /* SynchronizationClient.swift */,
 			);
 			path = Synchronization;
 			sourceTree = "<group>";
@@ -195,7 +189,7 @@
 			);
 			name = MobileScreenshotButton;
 			packageProductDependencies = (
-				40B6C33427DD8B070052D9CE /* ComposableArchitecture */,
+				4017771127EE12B500285035 /* ComposableArchitecture */,
 			);
 			productName = MobileScreenshotButton;
 			productReference = 401B762227DD68D7008D3500 /* MobileScreenshotButton.app */;
@@ -215,7 +209,8 @@
 			);
 			name = DesktopScreenshotButton;
 			packageProductDependencies = (
-				40B6C33227DD8AFD0052D9CE /* ComposableArchitecture */,
+				4017770F27EE129A00285035 /* ComposableArchitecture */,
+				405D709F27EE292D00C0BBFF /* ComposableArchitecture */,
 			);
 			productName = ScreenshotButton;
 			productReference = 4040212727D6AFFC00220A39 /* DesktopScreenshotButton.app */;
@@ -240,7 +235,7 @@
 				};
 			};
 			buildConfigurationList = 4040212227D6AFFC00220A39 /* Build configuration list for PBXProject "ScreenshotButton" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -249,6 +244,8 @@
 			);
 			mainGroup = 4040211E27D6AFFC00220A39;
 			packageReferences = (
+				4017770E27EE129A00285035 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				405D709E27EE292D00C0BBFF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 4040212827D6AFFC00220A39 /* Products */;
 			projectDirPath = "";
@@ -290,8 +287,9 @@
 				401B762527DD68D7008D3500 /* MobileScreenshotButtonApp.swift in Sources */,
 				401B763627DD6A6A008D3500 /* ContentView.swift in Sources */,
 				401B763427DD6976008D3500 /* TakeScreenshot.swift in Sources */,
+				405D709D27EE166500C0BBFF /* SynchronizationClient.swift in Sources */,
 				40B29F5427DDA3EF00232C3E /* ComposableStuff.swift in Sources */,
-				BDD6F6C7E75194A8BA44B3D7 /* Syncrhonization.swift in Sources */,
+				BDD6F6C7E75194A8BA44B3D7 /* Synchronization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +303,9 @@
 				4040212B27D6AFFC00220A39 /* ScreenshotButtonApp.swift in Sources */,
 				401B763827DD6CBB008D3500 /* ColorMultipeerSession.swift in Sources */,
 				BDD6F9FBF5B50DDC6D186130 /* TODOS.md in Sources */,
+				405D709C27EE166500C0BBFF /* SynchronizationClient.swift in Sources */,
 				BDD6FC8F57CB87142A637A24 /* STRETCH.md in Sources */,
-				BDD6FACB7E8E19BB541D2917 /* Syncrhonization.swift in Sources */,
+				BDD6FACB7E8E19BB541D2917 /* Synchronization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +437,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -492,6 +492,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -515,6 +516,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blueberrychopsticks.ScreenshotButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -544,6 +546,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blueberrychopsticks.ScreenshotButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -585,13 +588,39 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		4017770E27EE129A00285035 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		405D709E27EE292D00C0BBFF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		40B6C33227DD8AFD0052D9CE /* ComposableArchitecture */ = {
+		4017770F27EE129A00285035 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 4017770E27EE129A00285035 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
-		40B6C33427DD8B070052D9CE /* ComposableArchitecture */ = {
+		4017771127EE12B500285035 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 4017770E27EE129A00285035 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		405D709F27EE292D00C0BBFF /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4017770E27EE129A00285035 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
