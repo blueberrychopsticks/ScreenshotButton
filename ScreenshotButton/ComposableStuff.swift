@@ -37,8 +37,10 @@ enum AppAction: Equatable {
   case otterTextChanged(String)
   case pathTextChanged(String)
   case prefixTextChanged(String)
-  case synchronization(SyncrhonizationAction)
+  case synchronization(SynchronizationAction)
 }
+
+let foo: AppAction = .otterTextChanged("to this")
 
 struct AppEnvironment {}
 
