@@ -8,7 +8,7 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct ContentView: View {
+struct _ContentView: View {
   let store: Store<AppState, AppAction>
   let toggleAppVisibility: (Bool) -> Void
 

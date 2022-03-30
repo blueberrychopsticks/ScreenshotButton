@@ -90,41 +90,4 @@ struct AppEnvironment {}
       return .none
     }
   }
-
-  
-  
-//  loginReducer.pullback(
-//    state: /AppState.login,
-//    action: /AppAction.login,
-//    environment: {
-//      LoginEnvironment(
-//        authenticationClient: $0.authenticationClient,
-//        mainQueue: $0.mainQueue
-//      )
-//    }
-//  ),
-//  newGameReducer.pullback(
-//    state: /AppState.newGame,
-//    action: /AppAction.newGame,
-//    environment: { _ in NewGameEnvironment() }
-//  ),
-//  Reducer { state, action, _ in
-//    switch action {
-//    case let .login(.twoFactor(.twoFactorResponse(.success(response)))),
-//      let .login(.loginResponse(.success(response))) where !response.twoFactorRequired:
-//      state = .newGame(.init())
-//      return .none
-//
-//    case .login:
-//      return .none
-//
-//    case .newGame(.logoutButtonTapped):
-//      state = .login(.init())
-//      return .none
-//
-//    case .newGame:
-//      return .none
-//    }
-//  }
 )
-.debug()

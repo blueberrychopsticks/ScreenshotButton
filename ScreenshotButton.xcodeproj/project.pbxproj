@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400064CF27F4CBD50094F992 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040212C27D6AFFC00220A39 /* ContentView.swift */; };
+		400064D027F4CC400094F992 /* ScreenshotButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040212A27D6AFFC00220A39 /* ScreenshotButtonApp.swift */; };
 		4017771027EE129A00285035 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4017770F27EE129A00285035 /* ComposableArchitecture */; };
 		4017771227EE12B500285035 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4017771127EE12B500285035 /* ComposableArchitecture */; };
-		401B762527DD68D7008D3500 /* MobileScreenshotButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B762427DD68D7008D3500 /* MobileScreenshotButtonApp.swift */; };
 		401B762927DD68D8008D3500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401B762827DD68D8008D3500 /* Assets.xcassets */; };
 		401B762C27DD68D8008D3500 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401B762B27DD68D8008D3500 /* Preview Assets.xcassets */; };
 		401B763427DD6976008D3500 /* TakeScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B763327DD6976008D3500 /* TakeScreenshot.swift */; };
-		401B763627DD6A6A008D3500 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B763527DD6A6A008D3500 /* ContentView.swift */; };
 		401B763827DD6CBB008D3500 /* ColorMultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B763727DD6CBB008D3500 /* ColorMultipeerSession.swift */; };
 		401B763927DD6CBB008D3500 /* ColorMultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B763727DD6CBB008D3500 /* ColorMultipeerSession.swift */; };
 		4040212B27D6AFFC00220A39 /* ScreenshotButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040212A27D6AFFC00220A39 /* ScreenshotButtonApp.swift */; };
@@ -35,11 +35,9 @@
 /* Begin PBXFileReference section */
 		4012AAC627E451A400AD08F6 /* Page 10.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Page 10.rtf"; sourceTree = "<group>"; };
 		401B762227DD68D7008D3500 /* MobileScreenshotButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileScreenshotButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		401B762427DD68D7008D3500 /* MobileScreenshotButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileScreenshotButtonApp.swift; sourceTree = "<group>"; };
 		401B762827DD68D8008D3500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		401B762B27DD68D8008D3500 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		401B763327DD6976008D3500 /* TakeScreenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenshot.swift; sourceTree = "<group>"; };
-		401B763527DD6A6A008D3500 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		401B763727DD6CBB008D3500 /* ColorMultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMultipeerSession.swift; sourceTree = "<group>"; };
 		401B763A27DD76CB008D3500 /* DesktopScreenshotButton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DesktopScreenshotButton-Info.plist"; sourceTree = "<group>"; };
 		401B763B27DD7719008D3500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -83,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				401B763B27DD7719008D3500 /* Info.plist */,
-				401B762427DD68D7008D3500 /* MobileScreenshotButtonApp.swift */,
-				401B763527DD6A6A008D3500 /* ContentView.swift */,
 				401B763327DD6976008D3500 /* TakeScreenshot.swift */,
 				401B762827DD68D8008D3500 /* Assets.xcassets */,
 				401B762A27DD68D8008D3500 /* Preview Content */,
@@ -284,9 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				401B763927DD6CBB008D3500 /* ColorMultipeerSession.swift in Sources */,
-				401B762527DD68D7008D3500 /* MobileScreenshotButtonApp.swift in Sources */,
-				401B763627DD6A6A008D3500 /* ContentView.swift in Sources */,
+				400064CF27F4CBD50094F992 /* ContentView.swift in Sources */,
 				401B763427DD6976008D3500 /* TakeScreenshot.swift in Sources */,
+				400064D027F4CC400094F992 /* ScreenshotButtonApp.swift in Sources */,
 				405D709D27EE166500C0BBFF /* SynchronizationClient.swift in Sources */,
 				40B29F5427DDA3EF00232C3E /* ComposableStuff.swift in Sources */,
 				BDD6F6C7E75194A8BA44B3D7 /* Synchronization.swift in Sources */,

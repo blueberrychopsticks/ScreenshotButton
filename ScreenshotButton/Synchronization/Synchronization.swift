@@ -51,13 +51,7 @@ enum SynchronizationAction: Equatable {
   case startBrowsing
   case notAbleToStartBrowsingForOthers(error: String)
   
-//  case possiblePeerDiscovered(peerId: String)
-  /* going to write these as human readable as an experiment (see 95 commands otter recording */
-  /*👋🇺🇸🇺🇦*/case requestInviteToSession(sessionId: String) /*(SyncrhonizationAction  ) */
-  /*
-   * Session ID will be in sender's state, so don't need to specify as argument
-   */
-//  /*🇺🇸🤝🇺🇦*/case receivedInviteFromPeer(invitingPeerId: MCPeerID)
+
   /*🗺🤐🔐*/case peerJoinedOurSession(
     joinerId: String,
     sessionId: String /*TODO: - session secret */
@@ -136,40 +130,6 @@ let synchronizationReducer = Reducer<
       state.session.peers = state.session.peers.filter { $0 !== peerId }
       return .none
       
-//    case .receivedInviteFromPeer(invitingPeerId: let invitingPeerId):
-//      state.session.status = .invitedToJoin(peerId: invitingPeerId)
-//      return .none
-      
-      
-      
-      
-      
-      
-//    case .possiblePeerDiscovered(peerId: let peerId): break
-    case .requestInviteToSession(sessionId: let sessionId):break
-      
-//    case .peerRequestedInviteToOurSession(invitingPeerId: let invitingPeerId):break
-      
-      
-    case .peerJoinedOurSession(joinerId: let joinerId, sessionId: let sessionId):break
-      
-    case .attemptToJoinSession(sessionId: let sessionId):break
-      
-    case .weJoinedSessionSuccessfully(sessionId: let sessionId, peers: let peers, currentState: let currentState):break
-      
-      
-    case .sessionStateDidChange(state: let state):break
-      
-      
-    case .sendSyncState(_):break
-      
-    case .syncStateReceived(_):break
-      
-      
-    case .notAbleToStartBroadcastingAvailability(error: let error): break
-    case .notAbleToStartBrowsingForOthers(error: let error): break
-    case .errorJoiningSession(_):break
-      
     case .stopBroadcasting:
       return environment.synchronizationClient
         .stopBroadcasting()
@@ -180,7 +140,19 @@ let synchronizationReducer = Reducer<
       // technically going to be coming from the client
       break
       
+      
+      
+    case .peerJoinedOurSession(joinerId: let joinerId, sessionId: let sessionId):break
+    case .attemptToJoinSession(sessionId: let sessionId):break
+    case .weJoinedSessionSuccessfully(sessionId: let sessionId, peers: let peers, currentState: let currentState):break
+    case .sessionStateDidChange(state: let state):break
+    case .sendSyncState(_):break
+    case .syncStateReceived(_):break
+    case .notAbleToStartBroadcastingAvailability(error: let error): break
+    case .notAbleToStartBrowsingForOthers(error: let error): break
+    case .errorJoiningSession(_):break
     }
     
     return .none
   }
+.debug()

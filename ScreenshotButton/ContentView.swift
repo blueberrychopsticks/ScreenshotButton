@@ -12,18 +12,16 @@ struct ContentView: View {
   let store: Store<AppState, AppAction>
   let toggleAppVisibility: (Bool) -> Void
 
-//  @StateObject var colorSession = ColorMultipeerSession()
-
   var body: some View {
 
     WithViewStore(store) { viewStore in
 
       VStack {
-        Text("Connected Devices:").bold()
-
-//        Text(String(describing: colorSession.connectedPeers.map(\.displayName)))
+        Text("Discovered Peers").bold()
         Text(String(describing: viewStore.syncState.session.peers.map(\.displayName)))
 
+        Text("State").bold()
+        Text(String(describing: viewStore.syncState.session.status))
 //        TextField(
 //          "Otter",
 //          text: viewStore.binding(
