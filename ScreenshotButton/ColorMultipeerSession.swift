@@ -118,6 +118,13 @@ extension ColorMultipeerSession: MCNearbyServiceBrowserDelegate {
   }
 }
 
+
+
+
+
+
+
+
 extension ColorMultipeerSession: MCSessionDelegate {
   func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
     log.info("peer \(peerID) didChangeState: \(state.debugDescription)")
