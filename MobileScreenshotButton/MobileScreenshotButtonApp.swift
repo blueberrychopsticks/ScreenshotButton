@@ -1,5 +1,6 @@
 import SwiftUI
 import Foundation
+import ComposableArchitecture
 
 @main
 struct MobileScreenshotButtonApp: App {
@@ -8,7 +9,14 @@ struct MobileScreenshotButtonApp: App {
   var body: some Scene {
    
     WindowGroup {
-      ContentView()
+      ContentView(
+        store: Store(
+          initialState: AppState(),
+          reducer: appReducer,
+          environment: AppEnvironment()
+        ),
+        toggleAppVisibility: { _ in }
+      )
     }
   }
 }
