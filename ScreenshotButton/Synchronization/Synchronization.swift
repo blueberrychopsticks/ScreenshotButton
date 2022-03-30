@@ -20,9 +20,17 @@ struct Session: Equatable, Identifiable {
   var peers = [MCPeerID]()
 }
 
+#if os(iOS)
+let myPeerId = MCPeerID(displayName: UIDevice.current.name)
+#else
+let myPeerId = MCPeerID(displayName: Host.current().localizedName!)
+#endif
+
 struct SynchronizationState: Equatable, Identifiable {
-  let id: UUID
-  var session: Session
+   var id = UUID()
+  
+  var session = Session()
+  
 }
 
 /// TODO: further break this down into

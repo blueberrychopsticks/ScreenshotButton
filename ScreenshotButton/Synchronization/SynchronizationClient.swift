@@ -49,12 +49,6 @@ extension SynchronizationClient {
     
     let serviceType = "example-color"
     
-#if os(iOS)
-    let myPeerId = MCPeerID(displayName: UIDevice.current.name)
-#else
-    let myPeerId = MCPeerID(displayName: Host.current().localizedName!)
-#endif
-    
     let session: MCSession = MCSession(peer: myPeerId)
     
     let serviceAdvertiser: MCNearbyServiceAdvertiser = MCNearbyServiceAdvertiser(

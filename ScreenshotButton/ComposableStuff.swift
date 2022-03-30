@@ -12,6 +12,7 @@ struct AppState: Equatable {
     "If you're recording an Otter, paste it here. Eventually, I hope this can automatically detect if you're recording one of any publicly available voice to text transcriptions. And I hope the price of them goes down for all of those services, and will do everything in my power to maximize the uncomplicated individual's access to powerful organizational tools such as quality voice transcription with hot word custom mapping."
   var path = "/Users/laptop/Desktop/"
   var prefix = ""
+  var syncState = SynchronizationState()
 }
 //
 //enum SyncrhonizationAction: Equatable {
@@ -40,27 +41,90 @@ enum AppAction: Equatable {
   case synchronization(SynchronizationAction)
 }
 
-let foo: AppAction = .otterTextChanged("to this")
-
 struct AppEnvironment {}
 
-let appReducer = Reducer<AppState, AppAction, AppEnvironment> { state, action, environment in
-  switch action {
+//let urlReducer = Reducer<AppState, AppAction, AppEnvironment> { state, action, environment in
+//  switch action {
+//
+//  case let .otterTextChanged(otter):
+//    state.otter = otter
+//    return .none
+//  case let .pathTextChanged(path):
+//    state.path = path
+//    return .none
+//  case let .prefixTextChanged(prefix):
+//    state.prefix = prefix
+//    return .none
+//
+//
+//  }
+//}
 
-  case let .otterTextChanged(otter):
-    state.otter = otter
-    return .none
-  case let .pathTextChanged(path):
-    state.path = path
-    return .none
-  case let .prefixTextChanged(prefix):
-    state.prefix = prefix
-    return .none
-    
-  case .synchronization:
-    return .none
+//let appReducer = .
 
-  //  case .synchronization:
-  //    return .none
+
+ let appReducer = Reducer<AppState, AppAction, AppEnvironment>.combine(
+  
+  synchronizationReducer.pullback(
+    state: \AppState.syncState,
+    action: /AppAction.synchronization,
+    environment: { _ in
+      SynchronizationEnvironment()
+    }
+  ),
+  
+  Reducer { state, action, environment in
+    switch action {
+
+    case let .otterTextChanged(otter):
+      state.otter = otter
+      return .none
+    case let .pathTextChanged(path):
+      state.path = path
+      return .none
+    case let .prefixTextChanged(prefix):
+      state.prefix = prefix
+      return .none
+      
+    case .synchronization(_):
+      return .none
+    }
   }
-}
+
+  
+  
+//  loginReducer.pullback(
+//    state: /AppState.login,
+//    action: /AppAction.login,
+//    environment: {
+//      LoginEnvironment(
+//        authenticationClient: $0.authenticationClient,
+//        mainQueue: $0.mainQueue
+//      )
+//    }
+//  ),
+//  newGameReducer.pullback(
+//    state: /AppState.newGame,
+//    action: /AppAction.newGame,
+//    environment: { _ in NewGameEnvironment() }
+//  ),
+//  Reducer { state, action, _ in
+//    switch action {
+//    case let .login(.twoFactor(.twoFactorResponse(.success(response)))),
+//      let .login(.loginResponse(.success(response))) where !response.twoFactorRequired:
+//      state = .newGame(.init())
+//      return .none
+//
+//    case .login:
+//      return .none
+//
+//    case .newGame(.logoutButtonTapped):
+//      state = .login(.init())
+//      return .none
+//
+//    case .newGame:
+//      return .none
+//    }
+//  }
+)
+.debug()
